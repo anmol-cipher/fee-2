@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ <link rel="stylesheet" href="page1.css">
+
+</head>
+<body>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<div class="container">
+
+    <div class="slide">
+
+
+        <div class="item" style="background-image: url(https://i.ibb.co/qCkd9jS/img1.jpg);">
+            <div class="content">
+                <div class="name">Nature</div>
+                <div class="des">Explore the wonders of nature, from lush green forests to serene mountain landscapes. Discover the beauty and diversity of our planet's ecosystems.</div>
+                <button><a href="#"> See More</a></button>
+            </div>
+
+        </div>
+        <div class="item" style="background-image: url(https://images.pexels.com/photos/750073/pexels-photo-750073.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);">
+            <div class="content">
+                <div class="name">Food</div>
+                <div class="des">Explore a variety of delicious recipes, cooking tips, and the latest food trends to satisfy your taste buds.</div>
+                <button><a href="#"> See More</a></button>
+            </div>
+
+        </div>
+        <div class="item" style="background-image: url(https://images.pexels.com/photos/2398220/pexels-photo-2398220.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);">
+            <div class="content">
+                <div class="name">Travel</div>
+                <div class="des">Discover exciting travel destinations, tips for planning your trips, and explore the world with unforgettable experiences.</div>
+                <button><a href="#"> See More</a></button>
+            </div>
+
+        </div>
+        <div class="item" style="background-image: url(https://wallpapers.com/images/high/rainy-night-sports-car-ey1gtisn54z3vtpz.webp);">
+            <div class="content">
+                <div class="name">Vehicles</div>
+                <div class="des">Explore a wide range of vehicles, from cars and bikes to trucks and buses, designed to meet your needs and preferences.</div>
+                <button><a href="#"> See More</a></button>
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+    <div class="button">
+        <button class="prev"><i class="fa-solid fa-arrow-left"></i></button>
+        <button class="next"><i class="fa-solid fa-arrow-right"></i></button>
+    </div>
+
+</div>
+<script>let next = document.querySelector('.next')
+    let prev = document.querySelector('.prev')
+
+    next.addEventListener('click', function(){
+        let items = document.querySelectorAll('.item')
+        document.querySelector('.slide').appendChild(items[0])
+    })
+
+    prev.addEventListener('click', function(){
+        let items = document.querySelectorAll('.item')
+        document.querySelector('.slide').prepend(items[items.length - 1])
+    })</script>
+</body>
+</html>

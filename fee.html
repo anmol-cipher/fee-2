@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nature Blog</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="dark.css" />
+    <link rel="stylesheet" href="responsive.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="shortcut icon" href="Background.jpg" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="topnav">
+        <div class="logo">
+          <i class="fa-duotone fa-solid fa-mountain-sun"></i>
+          <h1>Nature Blog</h1>
+        </div>
+        <div class="container flex">
+            <a href="#" class="headings">Home</a>
+            <a href="#" class="headings">Categories</a>
+            <a href="#" class="headings">Blog</a>
+            <a href="#" class="headings">Nature</a>
+            <a href="#" class="headings">Contact Us</a>
+          </div>          
+        <div class="searchbar_flex">
+          <input type="checkbox" name="check" id="checkbox" hidden="" />
+          <label for="checkbox" class="toggle">
+            <div class="toggle_circle"></div>
+          </label>
+          <div class="navbaronoff">
+            <i class="fa-sharp fa-solid fa-bars"></i>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="headerimg">
+        <div class="container">
+          <div class="headerinfo">
+            <h1 class="title">Exploring the Wilderness</h1>
+            <p class="para">
+                Welcome to our nature blog! Join us as we venture into lush forests, climb majestic peaks, and discover hidden waterfalls. Nature has so much to offer, and we're here to share our experiences with you.
+            </p>
+            <div class="explore">
+              <a href="#" class="headerbtn">EXPLORE →</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="headerslider">
+        <div class="slidertitle flex">
+            <h2>My Recent Nature Explorations:</h2>
+          <div class="sliderbtn">
+            <button id="sright"><i class="fa-solid fa-arrow-left"></i></button>
+            <button id="sleft"><i class="fa-solid fa-arrow-right"></i></button>
+          </div>
+        </div>
+
+        <div class="headers_cards flex">
+            <!-- Card 1 -->
+            <div class="card">
+              <img src="Enchanted forest.webp" alt="Forest" />
+              <div class="info">
+                <span>Enchanted Forest</span>
+                <h3>Immerse in Nature's Serenity</h3>
+              </div>
+            </div>
+          
+            <!-- Card 2 -->
+            <div class="card">
+              <img src="Crystal lake.jpg" alt="Lake" />
+              <div class="info">
+                <span>Crystal Lake</span>
+                <h3>Reflect on Tranquil Waters</h3>
+              </div>
+            </div>
+          
+            <!-- Card 3 -->
+            <div class="card">
+              <img src="Majestic peaks.jpg" alt="Mountain" />
+              <div class="info">
+                <span>Majestic Peaks</span>
+                <h3>Conquer the Wilderness</h3>
+              </div>
+            </div>
+          </div>
+          
+      </section>
+      <div class="threecards container flex">
+        <!-- Card 1 -->
+        <div class="tcard">
+          <div class="tcard-img">
+            <img src="Ancient rainforest.jpg" />
+            <span class="fa fa-leaf"></span>
+          </div>
+          <div class="tcard-info flex">
+            <label class="tlabel">Ancient Forest</label>
+            <h4>Amazon Rainforest</h4>
+          </div>
+          <div class="star-rating">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+          </div>
+          <p>
+            Explore the depths of the Amazon Rainforest, the largest and most diverse tropical rainforest on Earth. Home to an incredible variety of wildlife and ancient trees, it's a haven for nature lovers.
+          </p>
+          <div class="read-more">Read More</div>
+        </div>
+      
+        <!-- Card 2 -->
+        <div class="tcard">
+          <div class="tcard-img">
+            <img src="Northern lights.jpeg" />
+            <span class="fa fa-leaf"></span>
+          </div>
+          <div class="tcard-info flex">
+            <label class="tlabel">Northern Lights</label>
+            <h4>Arctic Circle</h4>
+          </div>
+          <div class="star-rating">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+          </div>
+          <p>
+            Witness the breathtaking Northern Lights in the Arctic Circle, a natural spectacle that illuminates the night sky with vibrant colors. It's a once-in-a-lifetime experience for anyone passionate about the wonders of nature.
+          </p>
+          <div class="read-more">Read More</div>
+        </div>
+      
+        <!-- Card 3 -->
+        <div class="tcard">
+          <div class="tcard-img">
+            <img src="Coral reef.jpg" />
+            <span class="fa fa-leaf"></span>
+          </div>
+          <div class="tcard-info flex">
+            <label class="tlabel">Coral Reefs</label>
+            <h4>Great Barrier Reef</h4>
+          </div>
+          <div class="star-rating">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+          </div>
+          <p>
+            Dive into the colorful underwater world of the Great Barrier Reef, the largest coral reef system on the planet. It’s a paradise for marine life enthusiasts, offering unparalleled opportunities to explore vibrant coral formations and diverse sea creatures.
+          </p>
+          <div class="read-more">Read More</div>
+        </div>
+      </div>
+      
+      <div class="places">
+        <h2>Natural Wonders To Explore :</h2>
+      </div>
+      <!-- Small cards -->
+      <div class="small-cards">
+        <!-- Card 1 -->
+        <div class="sdcard">
+          <div class="smallcard-img">
+            <img src="Banff.cms" />
+            <div class="smallcard-info flex">
+              <label class="slabel">Banff National Park</label>
+              <p>
+                Nestled in the Canadian Rockies, Banff National Park is renowned for its stunning mountain landscapes, turquoise lakes, and diverse wildlife.
+              </p>
+            </div>
+          </div>
+        </div>
+      
+        <!-- Card 2 -->
+        <div class="sdcard">
+          <div class="smallcard-img">
+            <img src="Niagra falls.webp" />
+            <div class="smallcard-info flex">
+              <label class="slabel">Niagara Falls</label>
+              <p>
+                A spectacular natural wonder, Niagara Falls is renowned for its breathtaking waterfalls and the awe-inspiring power of nature.
+              </p>
+            </div>
+          </div>
+        </div>
+      
+        <!-- Card 3 -->
+        <div class="sdcard">
+          <div class="smallcard-img">
+            <img src="Serengeti.webp" />
+            <div class="smallcard-info flex">
+              <label class="slabel">Serengeti</label>
+              <p>
+                The Serengeti is famous for its incredible wildlife migrations and diverse ecosystems, offering unforgettable safari experiences.
+              </p>
+            </div>
+          </div>
+        </div>
+      
+        <!-- Card 4 -->
+        <div class="sdcard">
+          <div class="smallcard-img">
+            <img src="Grand canyon.jpg" alt="Grand Canyon" />
+            <div class="smallcard-info flex">
+              <label class="slabel">Grand Canyon</label>
+              <p>
+                The Grand Canyon, with its vast and dramatic landscapes, offers stunning views and a deep glimpse into Earth's geological history.
+              </p>
+            </div>
+          </div>
+        </div>
+      
+        <!-- Card 5 -->
+        <div class="sdcard">
+          <div class="smallcard-img">
+            <img src="Mount everest.jpg" />
+            <div class="smallcard-info flex">
+              <label class="slabel">Mount Everest</label>
+              <p>
+                The highest peak in the world, Mount Everest offers stunning views and challenging climbs, attracting adventurers from around the globe.
+              </p>
+            </div>
+          </div>
+        </div>
+      
+        <!-- Card 6 -->
+        <div class="sdcard">
+          <div class="smallcard-img">
+            <img src="Fiordland.jpeg" alt="Fiordland" />
+            <div class="smallcard-info flex">
+              <label class="slabel">Fiordland</label>
+              <p>
+                Located in New Zealand, Fiordland is known for its dramatic fjords, lush rainforests, and stunning natural beauty.
+              </p>
+            </div>
+          </div>
+        </div>
+      
+        <!-- Card 7 -->
+        <div class="sdcard">
+          <div class="smallcard-img">
+            <img src="Uluru.jpg" alt="Uluru" />
+            <div class="smallcard-info flex">
+              <label class="slabel">Uluru</label>
+              <p>
+                Uluru, also known as Ayers Rock, is an iconic sandstone monolith in Australia’s Red Centre, famous for its striking red color and cultural significance to the Indigenous Anangu people.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+
+       <div class="video">
+        <video class="vid" autoplay muted loop id="myVideo">
+            <source src="Video.mp4" type="video/mp4">
+          </video>
+          <div class="imagetext">
+            <h1>EMBRACE. WONDER. CONNECT.</h1>
+            <p>Feel the earth beneath your feet, breathe in the crisp air, and let the wilderness awaken your senses. 🌲🌻🌿
+
+            </p>
+          </div>
+
+       </div>
+       <section class="Hikes">
+        <div class="hike-text">
+            <h1>------------------NATURE ESCAPADES-------------------</h1>
+            <h2>Bucket List Nature Trails</h2>
+        </div>
+    </section>
+    
+    <section class="photocard container">
+        <div class="cr">
+            <img src="Yosemite.jpeg" alt="Yosemite National Park"/>
+            <p>Yosemite National Park, renowned for its majestic waterfalls and giant sequoias.</p>
+        </div>
+        <div class="cr">
+            <img src="Rocky mountains.jpg" alt="Rocky Mountains"/>
+            <p>The Rocky Mountains, known for their rugged terrain and breathtaking vistas.</p>
+        </div>
+        <div class="cr">
+            <img src="Everglades.jpg" alt="Everglades National Park"/>
+            <p>Everglades National Park, a unique wetland ecosystem rich in wildlife.</p>
+        </div>
+    </section>
+    
+    <section class="photocard container">
+        <div class="cr">
+            <img src="Zion.webp" alt="Zion National Park"/>
+            <p>Zion National Park, celebrated for its striking red rock canyons and diverse landscapes.</p>
+        </div>
+        <div class="cr">
+            <img src="Salar.jpg" alt="Salar de Uyuni"/>
+            <p>Salar de Uyuni, the world's largest salt flat, creating a mirror effect after rain.</p>
+        </div>
+        <div class="cr">
+            <img src="Plitvice.jpg" alt="Plitvice Lakes"/>
+            <p>Plitvice Lakes National Park, famous for its cascading lakes and lush green scenery.</p>
+        </div>
+    </section>
+    
+    <section class="Hikes">
+      <div class="hike-text">
+          <h1>-------------Discover Hidden Paradises--------------</h1>
+          <h2>🌿 Uncharted Paths Await 🌿</h2>
+      </div>
+  </section>
+  
+  <section class="photocard container">
+      <div class="cr">
+          <img src="Glacier.webp" alt="Glacier National Park"/>
+          <p>Glacier National Park, known for its stunning glaciers and rugged mountains.</p>
+      </div>
+      <div class="cr">
+          <img src="Waimea.jpg" alt="Waimea Canyon"/>
+          <p>Waimea Canyon, often referred to as the "Grand Canyon of the Pacific," offers breathtaking views.</p>
+      </div>
+      <div class="cr">
+          <img src="Galapagos.webp" alt="Galápagos Islands"/>
+          <p>The Galápagos Islands, famous for their unique wildlife and pristine landscapes.</p>
+      </div>
+  </section>
+  
+  <section class="photocard container">
+      <div class="cr">
+          <img src="Tasmania.webp" alt="Tasmania"/>
+          <p>Tasmania, known for its pristine wilderness and unique wildlife.</p>
+      </div>
+      <div class="cr">
+          <img src="Andes.jpg" alt="Andes Mountains"/>
+          <p>The Andes Mountains, stretching along South America with diverse ecosystems and stunning vistas.</p>
+      </div>
+      <div class="cr">
+          <img src="Kakadu.jpg" alt="Kakadu National Park"/>
+          <p>Kakadu National Park, renowned for its rich Aboriginal culture and diverse wildlife.</p>
+      </div>
+  </section>
+  
+  <section class="touch">
+      <div class="imagetouch">
+          <img src="Get in touch.jpg" alt="Contact"/>
+          <div class="imagetext">
+              <h5>Get in Touch</h5>
+              <p class="imp">Feel free to contact me if you have nature questions, comments, or suggestions!
+                  I'll try to get back to you!</p>
+              <i class="fa-brands fa-telegram"></i>
+          </div>
+      </div>
+  </section>
+  
+
+      <form class="newslet container">
+        <div class="newstext">
+          <h1>Newsletter</h1>
+          <p>Subscribe to my newsletter for the latest blog posts, tips, & travel guides. Let's stay updated!</p>
+          <div class="email-sec">
+          <input type="text" name = "text" placeholder="Email...">
+          <input type="submit" name = "submit" value = "Submit">
+        </div>
+        </div>
+      </form>
+
+      <footer class="foot">
+        <div class="mainfoot">
+          <div class="iconsfoot">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-github"></i>
+            <i class="fa-brands fa-pinterest"></i>
+            <i class="fa-duotone fa-solid fa-envelope"></i>
+            <i class="fa-brands fa-telegram"></i>
+            <i class="fa-brands fa-youtube"></i>
+          </div>
+          <div class="copyright">
+            <p>&copy Anmol's Blog 2024</p>
+          </div>
+          <div class="terms">
+            <ul>
+              <li><a href="#">Affiliate Disclosures </a></li>
+              <li><a href="#">Privacy Policy </a></li>
+              <li><a href="#">Terms and Conditions </a></li>
+            </ul>
+          </div>
+            <div class="footline">
+              <p>As an affiliate, I only recommend products and services that I feel are high quality and helpful to my readers. Thanks for your support.</p>
+            </div>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>
